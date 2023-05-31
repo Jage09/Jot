@@ -1,0 +1,37 @@
+.header {
+    text-align: center;
+    margin: auto;
+    margin-top: 25px;
+    background-color: grey;
+    width: 50%;
+    border: 3px solid black;
+    border-radius: 20%;
+}
+
+.title {
+    padding-top: 10px;
+}
+
+.subtitle {
+    font-weight: 500;
+    font-size: large;
+}
+
+.form {
+    text-align: center; /* this centers the text within the block */
+    margin: auto; /* this centers the div block not the text */
+    padding: 15px;
+}
+
+#add-button {
+    background-color: forestgreen; /*starts with a dark colored green */
+}
+
+#add-button:hover {
+    background-color: rgb(28, 143, 28); /* once hovered over the button will be a bit brighter */
+}
+
+.total-jots {
+    font-weight: 500;
+    font-size: large;
+}
