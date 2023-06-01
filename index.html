@@ -16,11 +16,12 @@
         <p class="subtitle">Jot Down Anything You Need To-Do!</p>
     </header>
 
+    <!--This div provide the ability to create items in the doc-->
     <div class="form">
         <form action="javascript:void(0);" method="post" onsubmit="app.Add()">
             <input type="text" id="add-text" placeholder="Add Here" size="50">
-            <input type="button" id="add-button" value="Add" class="btn btn-primary">
-            <div class="total-jots">
+            <input type="submit" id="add-button" value="Add" class="btn btn-primary">
+            <div class="total_jots">
                 <p >Total Jots:</p>
                 <p id="counter"></p>
             </div>
@@ -28,6 +29,23 @@
         </form>
     </div> 
 
+    <div class="table">
+        <table>
+            <tr class="table_list">
+                <th><h3>List of Jots</h3></th>
+            </tr>
+            <tbody id="list-items">
+            </tbody>
+        </table>
+    </div>
 
+    <div id="editbox" role="aria-hidden">
+        <form action="javascript:void(0)" method="post" id="save-edit">
+            <input type="text" id="edit-t0-do">
+            <input type="submit" value="Save" class="btn btn-success">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
