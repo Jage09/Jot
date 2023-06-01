@@ -35,3 +35,18 @@
     font-weight: 500;
     font-size: large;
 }
+
+.table {
+    text-align: center;
+}
+
+input[type="submit"], button, [aria-label] {
+    cursor: pointer;
+}
+
+.edit_box {
+    display: none;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+}
