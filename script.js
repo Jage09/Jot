@@ -30,11 +30,23 @@ var app = new function() {
     };
 
     this.Edit = function(item) {
+        el = document.getElementById('edit-todo');
+        el.value = this.list_items[item];
+        document.getElementById('edit-box').style.display = 'block';
+        self=this;
 
+        document.getElementById('save-edit').onsubmit = function() {
+            var task = el.value;
+            if(task) {
+                self.list_items.splice(item, 1, task.trim());
+                self.FetchAll();
+                CloseInput();
+            }
+        }
     };
 
     this.Delete = function(item) {
-
+        
     };
 
     this.Count = function(counter) {
@@ -46,5 +58,5 @@ var app = new function() {
 app.FetchAll();
 
 function CloseInput() {
-    document.getElementById("edit_box").style.display="none";
+    document.getElementById("edit-box").style.display="none";
 }
