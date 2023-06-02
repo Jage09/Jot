@@ -51,7 +51,17 @@ var app = new function() {
     };
 
     this.Count = function(counter) {
-
+        var el = document.getElementById('counter');
+        var name = 'Tasks';
+        if(counter) {
+            if(counter == 1) {
+                name = 'Task';
+            }
+            el.innerHTML = counter + ' ' + name;
+        }
+        else {
+            el.innerHTML = "No " + name;
+        }
     };
 
 }
