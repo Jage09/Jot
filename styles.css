@@ -44,7 +44,7 @@ input[type="submit"], button, [aria-label] {
     cursor: pointer;
 }
 
-.edit_box {
+#edit-box {
     display: none;
     margin: auto;
     margin-top: 10px;
