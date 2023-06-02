@@ -46,7 +46,8 @@ var app = new function() {
     };
 
     this.Delete = function(item) {
-        
+        this.list_items.splice(item,1);
+        this.FetchAll();
     };
 
     this.Count = function(counter) {
