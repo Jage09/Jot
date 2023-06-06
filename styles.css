@@ -1,3 +1,7 @@
+body {
+    background-color: #1d2630;
+    color: #fff;
+}
 .header {
     text-align: center;
     margin: auto;
@@ -23,8 +27,24 @@
     padding: 15px;
 }
 
+#add-item {
+    height: 50px;
+    width: 500px;
+    font-size:25px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #3b4d62;
+}
+
+::placeholder {
+    color: #fff;
+}
+
 #add-button {
     background-color: forestgreen; /*starts with a dark colored green */
+    height: 50px;
+    width: 75px;
+    margin-bottom: 13px;
 }
 
 #add-button:hover {
@@ -33,11 +53,19 @@
 
 .total_jots {
     font-weight: 500;
-    font-size: large;
+    font-size: 25px;
 }
 
-.table {
-    text-align: center;
+.table_title {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+#list_items {
+    font-size: 25px;
+    background-color: aqua;
 }
 
 input[type="submit"], button, [aria-label] {
@@ -49,4 +77,11 @@ input[type="submit"], button, [aria-label] {
     margin: auto;
     margin-top: 10px;
     text-align: center;
+    font-size: 25px;
+}
+
+#save-todo {
+    height: 45px;
+    width: 75px;
+    margin-bottom: 8px;
 }
